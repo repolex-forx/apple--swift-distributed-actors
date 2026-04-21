@@ -1,0 +1,17 @@
+[2026-04-21T11:33:06Z] === ENRICH ITERATION 1 START | repo=apple/swift-distributed-actors sha=d816a10b ===
+[2026-04-21T11:33:06Z] [iter=1] PHASE START: enrich repo=apple/swift-distributed-actors sha=d816a10b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/d816a10b-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/d816a10b70a6d537b2aa666ff735888b7ba40ab4.nq.gz
+[2026-04-21T11:33:06Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-21T11:33:33Z] [iter=1] AST store loaded triples=2857351 load_secs=26 mem_mb=1048 MB
+[2026-04-21T11:33:33Z] [iter=1] Step 2: Finding LSP targets mem_mb=1048 MB
+[2026-04-21T11:33:48Z] [iter=1] LSP targets found call_sites=18836 imports=944 extends=0 implements=0 secs=15
+[2026-04-21T11:34:03Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1048 MB
+[2026-04-21T11:34:20Z] [iter=1] Position index built positions=168534 nodes_with_types=195921 secs=17 mem_mb=1048 MB
+[2026-04-21T11:34:20Z] [iter=1] Step 3: Starting LSP resolution mem_mb=1048 MB already_completed_types=[] already_completed_files=0
+[2026-04-21T11:34:20Z] [iter=1] Resolving target type target_type=call_site count=18836
+[2026-04-21T11:34:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.3 files_done=0 resolved=0 errors=18836 current=Sources/CDistributedActorsMailbox/include/itoa.h
+[2026-04-21T11:34:30Z] [iter=1] Target type resolved target_type=call_site resolved=9 errors=18840 secs=10 mem_mb=1048 MB
+[2026-04-21T11:34:30Z] [iter=1] Resolving target type target_type=import_statement count=944
+[2026-04-21T11:34:32Z] [iter=1] Target type resolved target_type=import_statement resolved=1 errors=944 secs=2 mem_mb=1048 MB
+[2026-04-21T11:34:33Z] [iter=1] Step 5: Writing final enrichment file triples=2105
+[2026-04-21T11:34:33Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/d816a10b70a6d537b2aa666ff735888b7ba40ab4.nq.gz size_kb=34
+[2026-04-21T11:34:33Z] [iter=1] PHASE END: enrich elapsed_s=86 elapsed_min=1.4 total_triples=2105
